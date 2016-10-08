@@ -100,7 +100,8 @@ def OPEN_MOVIES(params):
 		page_s = urllib.unquote_plus(params['url'])
 		if http == None: return False
 		r2 = re.compile('<div class="sh3"><a href="([^"]+)">.*?</a></div>.*?<img src="(.*?)".*?alt=".*?title="([^"]+)"',re.S).findall(http)
-		r4 = re.compile('<div id="news-id-[0-9]+" style="display:inline;">(.*?)</div>',re.S).findall(http)
+		#r4 = re.compile('<div id="news-id-[0-9]+" style="display:inline;">(.*?)</div>',re.S).findall(http)
+		r4 = re.compile('<div class="shortdisc">(.*?)</div>',re.S).findall(http)
 	except:
 		dialog = xbmcgui.Dialog()
 		dialog.ok('ВНИМАНИЕ!', 'Нет такой страницы.', 'В этом разделе меньше страниц.')

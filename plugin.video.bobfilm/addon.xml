@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <addon id="plugin.video.bobfilm"
        name="Bobfilm"
-       version="0.0.1"
+       version="0.0.2"
        provider-name="Denis Fomin">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
