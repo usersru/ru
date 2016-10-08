@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.video.dream-film"
+       name="dream-film"
+       version="0.0.1"
+       provider-name="Denis Fomin">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>dream-film.net</summary>
+    <description>
+
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="repository.ruka"
        name="Ru Users addons"
 	   version="0.0.1"
